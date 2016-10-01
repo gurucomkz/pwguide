@@ -1,0 +1,28 @@
+{
+  "name": "pwguide",
+  "version": "0.1.0",
+  "description": "Angular directive for password strength guidance",
+  "main": [
+      "pwguide.js",
+      "pwguide.css"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gurucomkz/pwguide.git"
+  },
+  "keywords": [
+    "angular",
+    "directive",
+    "input",
+    "password"
+  ],
+  "author": "Sergey Shevchenko <sergey.aegis@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gurucomkz/pwguide/issues"
+  },
+  "homepage": "https://github.com/gurucomkz/pwguide#readme"
+}

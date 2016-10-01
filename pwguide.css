@@ -1,0 +1,81 @@
+
+.pw-validator-wrap{
+    position: relative;
+}
+.pw-validator-signaler{
+    position: absolute;
+    bottom: 100%;
+    right:0;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    transition: all 1s ease-out;
+}
+
+.pw-validator-signaler.ok{
+    opacity: 0;
+    /*display: none;*/
+}
+
+.pw-validator-signaler::before {
+    content: " ";
+    display: block;
+    border-color: silver transparent  transparent transparent;
+    border-style: solid;
+    border-width: 6px;
+    width: 1px;
+    height: 0px;
+    position: absolute;
+    top: 100%;
+    right: 10%;
+}
+.pw-validator-signaler::after {
+    content: " ";
+    display: block;
+    border-color: #ffffff transparent  transparent transparent;
+    border-style: solid;
+    border-width: 6px;
+    width: 1px;
+    height: 0px;
+    position: absolute;
+    left: 0px;
+    top: -14px;
+}
+.pwvs-upper::before{
+    content: "AZ";
+}
+.pwvs-lower::before{
+    content: "az";
+}
+.pwvs-num::before{
+    content: "0-9";
+}
+.pwvs-punct::before{
+    content: "!&+";
+}
+.pwvs-length::before{
+    content: ">="attr(len);
+}
+
+.pw-validator-signaler b{
+    border-right: 1px solid silver;
+    display: inline-block;
+    line-height: 24px;
+    font-size: 11px;
+    float: left;
+    height: 24px;
+    background: white;
+    padding: 0 3px;
+}
+
+.pw-validator-signaler b:first-child{
+    border-radius: 4px 0 0 4px;
+}
+.pw-validator-signaler b:last-child{
+    border-radius: 0 4px 4px 0;
+    border-right: 0;
+}
+
+.pw-validator-signaler b.ok{
+    background: rgb(63,81,181);
+    color: white;
+}
